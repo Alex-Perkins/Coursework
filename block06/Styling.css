@@ -60,22 +60,29 @@ ol {
     padding-top: 19px;
 }
 
+.No1 {
+    color: rgb(70, 46, 46);
+}
+
 img#XmasDinner1 {
     border: 3px solid black;
-    width: 29%;
+    width: 26%;
+    padding: 1px;
 
 }
 
 .No2 {
     position: relative;
-    bottom: 420px;
-    left: 570px;
+    bottom: 518px;
+    left: 591px;
+    color: rgb(186, 129, 59);
 }
 
 img#XmasDinner2 {
     border: 3px solid black;
-    width: 26%;
+    width: 20%;
     position: relative;
-    bottom: 428px;
+    bottom: 526px;
     left: 555px;
+    padding: 1px;
 }
