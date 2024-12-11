@@ -2,80 +2,125 @@ body {
     background-color: rgb(255, 255, 255)
 }
 
+/* Header CSS */
+
 h1 {
-  padding-left: 90px;
+  padding-left: 120px;
   color: rgb(160, 38, 38);
 }
 
+/* Table CSS */
+
 table {
     border-collapse: collapse;
-    min-height: 200px;
-    min-width: 500px
-}
-
-table th {
-    background-color: rgb(165, 167, 172);
-}
-
-table tr:nth-child(2) {
-    background-color: rgb(255, 228, 138);
-}
-
-table tr:nth-child(3) {
-    background-color: rgb(255, 228, 138);
-}
-
-th {
-    text-align: center;
     border: 2px solid black;
+}
+
+/* Table Header CSS */
+
+table tr th.Pantry {
+    padding: 10px;
+    border: 2px solid black;
+    margin: 5px;
+    background-color: antiquewhite;
     font-size: 22px;
-    padding: 8px;
 }
 
-td {
+table tr th.Basket {
+    padding: 10px;
     border: 2px solid black;
+    margin: 5px;
+    background-color: rgb(207, 129, 40);
+    font-size: 22px;
+}
+
+table tr th.Cold-Items {
+    padding: 10px;
+    border: 2px solid black;
+    margin: 5px;
+    background-color: rgb(157, 204, 243);
+    font-size: 22px;
+}
+
+/* Table Column CSS */
+
+table td.Column1 {
+    padding: 5px;
+    border: 2px solid black;
+    margin: 2px;
+    background-color: lightgray;
     text-align: center;
-    padding: 2px;
-    margin: 10px;
 }
 
-ul {
-    text-align: left;
-    border: 1px;
+table td.Column2 {
+    padding: 5px;
+    border: 2px solid black;
+    margin: 2px;
+    background-color: bisque;
+    text-align: center;
 }
 
-ol {
+/* UL and OL Column CSS */
+
+table td.UL {
+    padding: 5px;
+    border: 2px solid black;
+    margin: 2px;
+    background-color: rgb(157, 204, 243);
     text-align: left;
-    border: 1px;
 }
 
 .Fridge {
-    color: blue;
-    font-size: 20px;
+    font-size: 18px;
+    padding-bottom: 10px;
+}
+
+table td.OL {
+    padding: 5px;
+    border: 2px solid black;
+    margin: 2px;
+    background-color: rgb(157, 204, 243);
 }
 
 .Freezer {
-    color: blue;
-    font-size: 20px;
-    padding-top: 19px;
+    font-size: 18px;
+    padding-bottom: 10px;
+}
+
+/* Table Row CSS */
+
+table tr td.Misc {
+    padding: 10px;
+    border: 2px solid black;
+    margin: 5px;
+    background-color: rgb(245, 241, 241);
+}
+
+/* Image & Headers CSS */
+
+.No1 {
+    color: rgb(70, 46, 46);
 }
 
 img#XmasDinner1 {
     border: 3px solid black;
-    width: 29%;
+    width: 26%;
+    padding: 1px;
 
 }
 
 .No2 {
     position: relative;
-    bottom: 420px;
-    left: 570px;
+    bottom: 518px;
+    left: 591px;
+    color: rgb(186, 129, 59);
 }
 
 img#XmasDinner2 {
     border: 3px solid black;
-    width: 26%;
+    width: 20%;
     position: relative;
-    bottom: 428px;
+    bottom: 526px;
     left: 555px;
+    padding: 1px;
 }
