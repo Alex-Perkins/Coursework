@@ -25,20 +25,20 @@ function convertToCelsius(f) {
  */
 function describeTemperature(f) {
   // TODO
-  if (f >= 100) {
-    return message = 'very hot'
+if (f >= 100) {
+    return message = `very hot`
   }
   else if (f >= 86 && f < 100) {
-    return message = 'hot'
+    return message = `hot`
   }
   else if (f >= 64 && f < 86) {
-    return message = 'warm'
+    return message = `warm`
   }
   else if (f >= 32 && f < 64) {
-    return message = 'cold'
+    return message = `cold`
   }
   else if (f < 32) {
-    return message = 'very cold'
+    return message = `very cold`
   }
 }
 
