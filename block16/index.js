@@ -15,10 +15,10 @@
  */
 function logNames(items) {
   // TODO: use `forEach`
-  INVENTORY.forEach(function(itemName) {
-console.log(itemName.name)
+  INVENTORY.forEach(function (itemName) {
+    console.log(itemName.name)
   });
-} /** DONE DONE DONE DONE DONE DONE DONE DONE DONE DONE DONE DONE DONE DONE DONE DONE DONE DONE DONE DONE DONE */
+} 
 
 /**
  * @param {Item[]} items - array of items
@@ -28,10 +28,10 @@ function getUppercaseNames(items) {
   // TODO: use `map`
   return INVENTORY.map(itemName => {
     return {
-        ...itemName, name: itemName.name[0].toUpperCase() + itemName.name.slice(1),
+      ...itemName, name: itemName.name[0].toUpperCase() + itemName.name.slice(1),
     };
-});
-} /** DONE DONE DONE DONE DONE DONE DONE DONE DONE DONE DONE DONE DONE DONE DONE DONE DONE DONE DONE DONE DONE */
+  });
+} 
 
 /**
  * @param {Item[]} items - array of items
@@ -40,8 +40,9 @@ function getUppercaseNames(items) {
  */
 function getItemById(items, id) {
   // TODO: use `find`
-  
-}
+  const found = items.find((element) => element.id === id);
+  return found
+} 
 
 /**
  * @param {Item[]} items - array of items
@@ -50,7 +51,12 @@ function getItemById(items, id) {
  */
 function getItemPriceByName(items, name) {
   // TODO: use a loop!
-}
+  for (let i = 0; i < items.length; i++) {
+    if (items[i].name === name) {
+      return items[i].price
+    }
+  }
+} 
 
 /**
  * @param {Item[]} items - array of items
@@ -59,7 +65,9 @@ function getItemPriceByName(items, name) {
  */
 function getItemsByCategory(items, category) {
   // TODO: use `filter`
-}
+  const itemsByCategoryFilter = items.filter(item => item.category === category)
+  return itemsByCategoryFilter
+} 
 
 /**
  * @param {Item[]} items - array of items
@@ -67,6 +75,10 @@ function getItemsByCategory(items, category) {
  */
 function countItems(items) {
   // TODO: use `reduce`
+  const countAll = INVENTORY.reduce((count, items) => {
+    return count + 1;
+  }, 0);
+  return countAll;
 }
 
 /**
@@ -75,6 +87,8 @@ function countItems(items) {
  */
 function calculateTotalPrice(items) {
   // TODO: use `reduce`
+  const priceAll = INVENTORY.reduce((amount, items) => amount + items.price, 0);
+  return priceAll;
 }
 
 // --------------------- DO NOT CHANGE THE CODE BELOW ------------------------ //
