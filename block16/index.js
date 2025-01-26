@@ -40,8 +40,8 @@ function getUppercaseNames(items) {
  */
 function getItemById(items, id) {
   // TODO: use `find`
-  const found = items.find((element) => element.id === id);
-  return found
+ let itemId = INVENTORY.find(items => items.id === id);
+ return itemId;
 } 
 
 /**
